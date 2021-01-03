@@ -1,0 +1,25 @@
+{
+  "name": "Emulated HUE",
+  "version": "0.0.10",
+  "description": "HUE Emulation for Home Assistant (dev)",
+  "url": "https://github.com/marcelveldt/hass_emulated_hue",
+  "slug": "emulated_hue-dev",
+  "stage": "stable",
+  "startup": "application",
+  "boot": "auto",
+  "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
+  "map": ["config:rw"],
+  "host_network": true,
+  "environment": {},
+  "homeassistant_api": true,
+  "options": {
+    "tag_commit_or_branch": "dev"
+  },
+  "schema": {
+    "tag_commit_or_branch": "str",
+    "data": "bool",
+    "url": "str",
+    "token": "str",
+    "verbose": "bool"
+  }
+}

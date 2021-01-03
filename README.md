@@ -1,1 +1,1 @@
-hassio-repo
+Emulated Hue for Home Assistant Addon
