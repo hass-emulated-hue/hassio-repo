@@ -16,12 +16,12 @@ if bashio::config.has_value 'tag_commit_or_branch'; then
       username="hass-emulated-hue"
       ref=$release_version
     fi
-    full_url="https://github.com/${username}/core/archive/${ref}.zip"
+    full_url="https://github.com/${username}/core/archive/${ref}.tar.gz"
     bashio::log.info "Installing Emulated Hue version '${release_version}' (${full_url})..."
-    curl -Lo /tmp/emulator.zip "${full_url}"
-    inner_folder=`unzip -qql /tmp/emulator.zip | head -n1 | tr -s ' ' | cut -d' ' -f5-`
-    unzip /tmp/emulator.zip -d /tmp/emulator
-    rm -rf /app/*
-    mv "/tmp/emulator/${inner_folder}/emulated_hue" "/app/"
+    curl -Lo /tmp/emulator.tar.gz "${full_url}"
+    mkdir /tmp/emulator
+    tar zxvf /tmp/emulator.tar.gz --strip 1 -C /tmp/emulator
+    rm -rf /app/emulated_hue
+    mv /tmp/emulator /app/emulated_hue
     bashio::log.info "Installed successfully!"
 fi
