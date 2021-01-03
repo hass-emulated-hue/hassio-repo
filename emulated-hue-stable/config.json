@@ -19,6 +19,5 @@
     "url": "str",
     "token": "str",
     "verbose": "bool"
-  },
-  "image": "ghcr.io/hass-emulated-hue/core:latest"
+  }
 }
