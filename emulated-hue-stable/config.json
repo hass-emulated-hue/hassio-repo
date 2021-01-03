@@ -16,8 +16,9 @@
   },
   "schema": {
     "data": "bool",
-    "url": "str",
+    "lights": ["str"],
     "token": "str",
+    "url": "str",
     "verbose": "bool"
   },
   "image": "ghcr.io/hass-emulated-hue/core"
