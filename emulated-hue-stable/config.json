@@ -1,9 +1,9 @@
 {
   "name": "Emulated HUE (stable)",
-  "version": "0.0.10",
-  "description": "HUE Emulation for Home Assistant (stable)",
-  "url": "https://github.com/marcelveldt/hass_emulated_hue",
-  "slug": "emulated_hue-stable",
+  "version": "latest",
+  "description": "Hue Emulation for Home Assistant",
+  "url": "https://github.com/hass-emulated-hue/core",
+  "slug": "emulated-hue-stable",
   "stage": "stable",
   "startup": "application",
   "boot": "auto",
@@ -19,5 +19,6 @@
     "url": "str",
     "token": "str",
     "verbose": "bool"
-  }
+  },
+  "image": "ghcr.io/hass-emulated-hue/core"
 }
