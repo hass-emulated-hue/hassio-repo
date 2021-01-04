@@ -4,7 +4,7 @@
   "description": "Hue Emulation for Home Assistant",
   "url": "https://github.com/hass-emulated-hue/core",
   "slug": "emulated-hue-dev",
-  "stage": "stable",
+  "stage": "experimental",
   "startup": "application",
   "boot": "auto",
   "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
