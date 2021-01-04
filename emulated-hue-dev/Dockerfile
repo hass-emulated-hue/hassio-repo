@@ -1,7 +1,7 @@
 FROM alpine:latest as downloader
 
 RUN wget -O base.tar.gz https://github.com/hass-emulated-hue/s6-overlay-base/archive/master.tar.gz \
-    && /base \
+    && mkdir /base \
     && tar zxvf base.tar.gz --strip 1 -C /base
 
 
