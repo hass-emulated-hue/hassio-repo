@@ -19,7 +19,7 @@
   "schema": {
     "tag_commit_or_branch": "str",
     "data": "bool?",
-    "lights": ["str?"],
+    "lights": "list(str?)?",
     "token": "str?",
     "url": "str?",
     "verbose": "bool?"
