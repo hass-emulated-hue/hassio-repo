@@ -13,12 +13,13 @@
   "environment": {},
   "homeassistant_api": true,
   "options": {
+    "verbose": true
   },
   "schema": {
-    "data": "bool",
-    "lights": ["str"],
-    "token": "str",
-    "url": "str",
+    "data": "bool?",
+    "lights": ["str?"],
+    "token": "str?",
+    "url": "str?",
     "verbose": "bool"
   },
   "image": "ghcr.io/hass-emulated-hue/core"
