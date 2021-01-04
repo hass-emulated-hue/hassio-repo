@@ -13,11 +13,12 @@
   "environment": {},
   "homeassistant_api": true,
   "options": {
+    "lights": [],
     "verbose": true
   },
   "schema": {
     "data": "bool?",
-    "lights": ["str?"],
+    "lights": ["str"],
     "token": "str?",
     "url": "str?",
     "verbose": "bool"
