@@ -22,6 +22,7 @@ if bashio::config.has_value 'tag_commit_or_branch'; then
     mkdir /tmp/emulator
     tar zxvf /tmp/emulator.tar.gz --strip 1 -C /tmp/emulator
     rm -rf /app/emulated_hue
+    mkdir /app
     mv /tmp/emulator /app/emulated_hue
     bashio::log.info "Installed successfully!"
 fi
