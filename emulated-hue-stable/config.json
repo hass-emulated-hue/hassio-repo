@@ -22,5 +22,5 @@
     "url": "str?",
     "verbose": "bool"
   },
-  "image": "ghcr.io/hass-emulated-hue/core"
+  "image": "hassemulatedhue/core"
 }
