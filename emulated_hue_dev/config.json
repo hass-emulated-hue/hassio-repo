@@ -18,6 +18,8 @@
   },
   "schema": {
     "tag_commit_or_branch": "str",
-    "verbose": "bool?"
+    "token": "str?",
+    "url": "str?",
+    "verbose": "bool"
   }
 }

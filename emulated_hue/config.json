@@ -16,6 +16,8 @@
     "verbose": false
   },
   "schema": {
+    "token": "str?",
+    "url": "str?",
     "verbose": "bool"
   },
   "image": "ghcr.io/hass-emulated-hue/core"
