@@ -10,3 +10,5 @@ FROM ghcr.io/hass-emulated-hue/base-image:master
 # Copy root filesystem
 COPY --from=downloader /base/rootfs/ /
 COPY --from=downloader /base/rootfs-dev/ /
+
+LABEL io.hass.version="dev"
