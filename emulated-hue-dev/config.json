@@ -3,7 +3,7 @@
   "version": "dev",
   "description": "Hue Emulation for Home Assistant",
   "url": "https://github.com/hass-emulated-hue/core",
-  "slug": "emulated-hue-dev",
+  "slug": "emulated_hue_dev",
   "stage": "experimental",
   "startup": "application",
   "boot": "auto",
