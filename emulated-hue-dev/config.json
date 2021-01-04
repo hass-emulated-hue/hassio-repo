@@ -13,14 +13,11 @@
   "environment": {},
   "homeassistant_api": true,
   "options": {
-    "tag_commit_or_branch": "dev",
+    "tag_commit_or_branch": "master",
     "verbose": true
   },
   "schema": {
     "tag_commit_or_branch": "str",
-    "data": "bool?",
-    "token": "str?",
-    "url": "str?",
     "verbose": "bool?"
   }
 }
