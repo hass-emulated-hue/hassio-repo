@@ -14,4 +14,4 @@ This virtual bridge runs at HTTP port 80 and HTTPS port 443 on your local networ
 
 ## More info ?
 
-https://github.com/marcelveldt/hass_emulated_hue
+https://github.com/hass-emulated-hue/core
