@@ -1,5 +1,3 @@
-# syntax=docker/dockerfile:experimental
-
 #####################################################################
 #                                                                   #
 # Build Wheels                                                      #
@@ -85,9 +83,9 @@ RUN apt-get update \
     && rm -rf /tmp/* \
     && rm -rf /var/lib/apt/lists/*
 
+COPY --from=bashiodownloader /bashio /bashio
 # Install bashio
-RUN --mount=type=bind,target=/bashio,source=/bashio,from=bashiodownloader,rw \
-    mv /bashio/lib /usr/lib/bashio \
+RUN mv /bashio/lib /usr/lib/bashio \
     && ln -s /usr/lib/bashio/bashio /usr/bin/bashio
 
 # Install s6 overlay
@@ -95,8 +93,8 @@ COPY --from=s6downloader /s6downloader /
 
 # https://github.com/moby/buildkit/blob/master/frontend/dockerfile/docs/syntax.md#build-mounts-run---mount
 # Install pip dependencies with built wheels
-RUN --mount=type=bind,target=/wheels,source=/wheels,from=wheels-builder,rw \
-    pip install --no-cache-dir -f /wheels -r /wheels/requirements.txt
+COPY --from=wheels-builder /wheels /wheels
+RUN pip install --no-cache-dir -f /wheels -r /wheels/requirements.txt
 
 WORKDIR /app
 
