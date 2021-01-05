@@ -1,0 +1,23 @@
+{
+  "name": "Emulated HUE (testing)",
+  "version": "testing",
+  "description": "Hue Emulation for Home Assistant",
+  "url": "https://github.com/hass-emulated-hue/core",
+  "slug": "emulated_hue_dev",
+  "stage": "experimental",
+  "startup": "application",
+  "boot": "auto",
+  "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
+  "map": ["config:rw"],
+  "host_network": true,
+  "environment": {},
+  "homeassistant_api": true,
+  "options": {
+    "tag_commit_or_branch": "master",
+    "verbose": true
+  },
+  "schema": {
+    "tag_commit_or_branch": "str",
+    "verbose": "bool"
+  }
+}
