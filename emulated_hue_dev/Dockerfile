@@ -12,4 +12,4 @@ FROM ghcr.io/hass-emulated-hue/base-image:master
 COPY --from=downloader /base/scripts/ /scripts
 COPY --from=downloader /base/dev-scripts/ /scripts
 
-ENTRYPOINT ["/scripts/10-entrypoint.sh"]
+CMD ["/scripts/10-entrypoint.sh"]
