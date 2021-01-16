@@ -16,6 +16,8 @@
     "verbose": false
   },
   "schema": {
+    "http_port": "str?",
+    "https_port": "str?",
     "verbose": "bool"
   },
   "image": "ghcr.io/hass-emulated-hue/core"

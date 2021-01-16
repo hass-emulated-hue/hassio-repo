@@ -9,6 +9,14 @@ your own fork so you can make changes and test them yourself!
 
 ## Configuration Options
 
+### Option: `http_port`
+
+Enter an integer to specify a custom http port. This defaults to port 80 if not specified. 
+
+### Option: `https_port`
+
+Enter an integer to specify a custom https port. This defaults to port 443 if not specified.
+
 ### Option: `tag_commit_or_branch`
 
 Enter any tag, commit hash, or branch name that you want to

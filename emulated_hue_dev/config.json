@@ -17,6 +17,8 @@
     "verbose": true
   },
   "schema": {
+    "http_port": "int?",
+    "https_port": "str?",
     "tag_commit_or_branch": "str",
     "verbose": "bool"
   }
