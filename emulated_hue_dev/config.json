@@ -20,7 +20,7 @@
     "http_port": "int?",
     "https_port": "int?",
     "tag_commit_or_branch": "str",
-    "use_default_ports_for_discovery": "bool",
+    "use_default_ports_for_discovery": "bool?",
     "verbose": "bool"
   }
 }
