@@ -50,6 +50,11 @@ You can find all our [branches here.](https://github.com/hass-emulated-hue/core/
 A branch may have many changes and may be merged into future versions. Testing for
 bugs before merging can help to prevent future bugs.
 
+### Option: `use_default_ports_for_discovery`
+
+Only use HTTP and HTTPS ports for server listening, but continue to advertise HUE on 80 and 443.
+Useful for reverse proxies
+
 ### Option: `verbose`
 
 Enter true or false to toggle verbose logging. This will provided increase logs for debugging.

@@ -18,6 +18,7 @@
   "schema": {
     "http_port": "int?",
     "https_port": "int?",
+    "use_default_ports_for_discovery": "bool",
     "verbose": "bool"
   },
   "image": "ghcr.io/hass-emulated-hue/core"
