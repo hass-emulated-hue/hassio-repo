@@ -9,7 +9,7 @@ RUN wget -O /tmp/base.tar.gz "https://github.com/hass-emulated-hue/core/archive/
     && tar zxvf /tmp/base.tar.gz --strip 1 -C /tmp/base \
     && mv /tmp/base/* .
 
-FROM ghcr.io/hass-emulated-hue/core:master
+FROM ghcr.io/hass-emulated-hue/core:refactor
 
 # Copy root filesystem
 COPY --from=downloader /base/docker/rootfs-dev/ /
