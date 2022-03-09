@@ -1,6 +1,6 @@
 {
   "name": "Emulated HUE (dev)",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Hue Emulation for Home Assistant",
   "url": "https://github.com/hass-emulated-hue/core",
   "slug": "emulated_hue_dev",
