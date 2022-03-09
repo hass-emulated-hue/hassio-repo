@@ -12,7 +12,7 @@ RUN wget -O /tmp/base.tar.gz "https://github.com/hass-emulated-hue/core/archive/
 FROM ghcr.io/hass-emulated-hue/core:refactor
 
 # Copy root filesystem
-COPY --from=downloader /base/docker/rootfs-dev/ /
+COPY --chmod=755 --from=downloader /base/docker/rootfs-dev/ /
 
 # Remove existing installation
 RUN rm -rf emulated_hue

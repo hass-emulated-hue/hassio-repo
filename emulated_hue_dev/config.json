@@ -1,6 +1,6 @@
 {
   "name": "Emulated HUE (dev)",
-  "version": "dev-0.1.0",
+  "version": "0.2.0",
   "description": "Hue Emulation for Home Assistant",
   "url": "https://github.com/hass-emulated-hue/core",
   "slug": "emulated_hue_dev",
@@ -12,6 +12,7 @@
   "host_network": true,
   "environment": {},
   "homeassistant_api": true,
+  "init": false,
   "options": {
     "tag_commit_or_branch": "master",
     "verbose": true
