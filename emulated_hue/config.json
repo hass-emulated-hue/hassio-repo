@@ -12,6 +12,7 @@
   "host_network": true,
   "environment": {},
   "homeassistant_api": true,
+  "init": false,
   "options": {
     "verbose": false
   },
